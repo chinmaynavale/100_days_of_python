@@ -16,11 +16,11 @@ def caeser(start_text, shift_amount, cipher_direction):
         else:
             end_text += char
 
-    print(f'The {cipher_direction}d message is: {end_text}')
+    print(f'The {cipher_direction}d message is: {end_text} \n')
 
 
+print(logo)
 while True:
-    print(logo)
     direction = input('Type "encode" to encrypt, type "decode" to decrypt: \n')
     text = input('Type your message: \n').lower()
     shift = int(input('Type the shift number: \n'))
@@ -28,7 +28,7 @@ while True:
     caeser(text, shift, direction)
 
     result = input(
-        'Type "yes" if you want to go again. Otherwise type "no".\n')
+        'Do you wish to continue? "yes" or "no":  ')
     if result.lower() == 'no':
         print('Goodbye')
         break
