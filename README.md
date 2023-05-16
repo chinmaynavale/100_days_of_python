@@ -1,3 +1,3 @@
-# 100_days_of_python
+# Practice_python
 
-100 Days of code - Python Challenge
+Python Challenge
